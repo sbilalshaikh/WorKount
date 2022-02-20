@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WorKount</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <style>
+      .label {
+        padding-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar"
+      role="navigation"
+      aria-label="main navigation"
+      style="background-color: rgb(227, 230, 229)"
+    >
+      <div class="navbar-brand">
+        <h1 style="color: crimson">WorKount</h1>
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+    </nav>
+    <form
+      method="POST"
+      style="width: 50%; margin-right: 30px; margin-top: 30px"
+    >
+      <label>Excerise Name</label>
+      <input
+        class="input"
+        type="text"
+        name="excerise"
+        placeholder="Excerise Name"
+      />
+      <label>Number of reps</label>
+      <input
+        class="input"
+        type="number"
+        name="reps"
+        placeholder="Number of Reps"
+      />
+      <label>Number of Sets</label>
+      <input
+        class="input"
+        type="text"
+        name="sets"
+        placeholder="Number of Sets"
+      />
+      <label>Pause time</label>
+      <input
+        class="input"
+        type="number"
+        name="pause"
+        placeholder="Pause Time between sets (in seconds)"
+      />
+      <button type="submit">Start your reps!</button>
+    </form>
+  </body>
+</html>

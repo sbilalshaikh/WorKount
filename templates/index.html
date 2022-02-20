@@ -4,10 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/main.css')
-    }}" {% block head %}{% endblock %}
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'css/main.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
   </head>
   <body>
-    <img src="{{ url_for('video') }}" width="50%" />
+    <nav
+      class="navbar"
+      role="navigation"
+      aria-label="main navigation"
+      style="background-color: rgb(227, 230, 229)"
+    >
+      <div class="navbar-brand">
+        <h1 style="color: crimson">WorKount</h1>
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+    </nav>
+    <p>Start your reps!</p>
+    <br />
+    <br />
+    <p>Excercise: {{ excercise }}</p>
+    <p>Reps: {{ reps }}, Sets: {{ sets }}</p>
+    <div>
+      <img src="{{ url_for('video') }}" width="50%" />
+    </div>
   </body>
 </html>
